@@ -1,0 +1,100 @@
+.job {
+  position: relative;
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
+  padding: 4rem 1rem 2rem 1rem;
+  margin: 1rem 0 4rem 0;
+  border-radius: 4px;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.3);
+  &--highlight {
+    border-left: 4px solid hsl(180, 29%, 50%);
+  }
+  &__image {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: -30px;
+  }
+  &__company {
+    color: hsl(180, 29%, 50%);
+  }
+  &__new {
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: hsl(180, 29%, 50%);
+    margin-left: 1.5rem;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 25px;
+  }
+  &__featured {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 0.5rem;
+    background-color: hsl(180, 14%, 20%);
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 25px;
+  }
+  &__title {
+    margin-top: 0.75rem;
+    font-size: 1rem;
+  }
+  &__details {
+    margin-top: 0.75rem;
+    color: rgb(119, 119, 119);
+    & ul li:not(:first-child) {
+      margin-left: 1rem;
+      list-style-type: disc;
+    }
+  }
+  &__skills {
+    & ul {
+      margin-top: 1rem;
+    }
+    & ul li {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: hsl(180, 29%, 50%);
+      background-color: #dbe7e5;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+    & ul li:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+    & ul li:hover {
+      background-color: hsl(180, 14%, 20%);
+      color: hsl(0, 0%, 100%);
+    }
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  .job {
+    display: flex;
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .job__image {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-right: 2rem;
+  }
+
+  .job__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .job .horizontal-rule {
+    display: none;
+  }
+
+  .job__skills {
+    margin-left: auto;
+  }
+}
