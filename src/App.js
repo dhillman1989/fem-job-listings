@@ -12,7 +12,11 @@ function App() {
           jobs.map((job) => {
             return (
               <li class={job.featured ? 'job job--highlight' : 'job'}>
-                <img src={job.logo} className='job__image' />
+                <img
+                  src={job.logo}
+                  className='job__image'
+                  alt={`${job.company} logo`}
+                />
                 <div class='job__info'>
                   <div class='flex-row'>
                     <h2 class='job__company'>{job.company}</h2>
