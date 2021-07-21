@@ -19,13 +19,21 @@ body {
   background-color: rgb(141, 141, 141);
 }
 
-.listings {
-  margin: 5rem auto;
+.listings,
+.filterbox {
   width: 360px;
 }
 
+.filterbox {
+  margin: -5rem auto 0 auto;
+}
+.listings {
+  margin: 5rem auto;
+}
+
 @media only screen and (min-width: 990px) {
-  .listings {
+  .listings,
+  .filterbox {
     width: 990px;
   }
 }
