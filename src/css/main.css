@@ -165,14 +165,13 @@ body {
   width: 360px;
   background-color: white;
   padding: 1rem 1rem 1rem 1rem;
-  margin: 0rem 0 7.5rem 0;
+  margin: 3rem auto 4rem auto;
   border-radius: 4px;
   box-shadow: 0 5px 5px 5px rgba(70, 131, 131, 0.2);
 }
 
 @media only screen and (min-width: 990px) {
   .filterlist {
-    margin-top: 4rem;
     width: 990px;
   }
 }
