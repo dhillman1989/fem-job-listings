@@ -21,14 +21,15 @@ body {
 
 .listings,
 .filterbox {
-  width: 340px;
+  width: 350px;
+  max-width: 90%;
 }
 
 .filterbox {
   margin: -5rem auto 0 auto;
 }
 .listings {
-  margin: 5rem auto;
+  margin: 5rem 0.5rem;
 }
 
 @media only screen and (min-width: 990px) {
